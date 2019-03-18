@@ -7,17 +7,22 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "file-loader": "^3.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-hot-loader": "^4.7.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "semantic-ui-react": "^0.85.0",
+    "url-loader": "^1.1.2",
+    "yarn": "^1.13.0"
   },
   "scripts": {
-    "dev": "webpack -d --watch",
-    "start": "node ./server/index.js",
+    "dev": "webpack -d --hot",
+    "start": "webpack-dev-server --hot",
     "build": "webpack -p",
-    "react-dev": "webpack -d --watch",
+    "react-dev": "webpack -d --hot",
     "server-dev": "nodemon public/index.js"
   },
   "eslintConfig": {
