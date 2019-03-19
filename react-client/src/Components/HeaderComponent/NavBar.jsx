@@ -20,7 +20,7 @@ class NavBar extends Component {
     return (
       <header>
         <div>
-          <Menu secondary inverted large>
+          <Menu secondary pointing inverted large className='nav-menu'>
             <Menu.Item 
               name='home' 
               active={this.state.active === 'home'?'true':''}

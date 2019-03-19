@@ -3,16 +3,18 @@ import { Segment, Header, Divider, Container, Menu, Button } from 'semantic-ui-r
 class HomePage extends Component {
   render() {
     return (
-      <div>
-          <Segment inverted vertical><Header as='h1' textAlign='center'>Hey there and welcome to my portfolio!</Header>
+      <div class='p-4'>
+          <Segment padded inverted className='banner shadow'><Header as='h1' textAlign='center'>Welcome To My Portfolio</Header>
             <Container>
               <Divider />
-              <Header inverted as='h3' textAlign='center'>My name is Wes, a computer engineer with a passion for full stack development,
-            machine learning, automation, and robotics. <br/>On my site you'll find all of the exciting projects I've worked on, a blog of things I find interesting,
-            and a copy of my resume. Stay a while and enjoy yourself!</Header>
+              <Header inverted as='h2' textAlign='center'>About Me:</Header>
+              <Header inverted as='h3' textAlign='center'>I'm Wes, a computer engineer with a passion for full stack development,
+            machine learning, automation, and robotics. <br/>On my site you'll my interactive resume, all of the exciting projects I've worked on, and a blog of things I find interesting. <br/>Stay a while and enjoy yourself!</Header>
             </Container>
           </Segment>
-          <Header as='h2' textAlign='center'>Find me on all forms of social media:</Header>
+          
+          <Segment padded className='shadow'>
+          <Header as='h2' textAlign='center'>Find me on these forms of social media:</Header>
           <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4 d-flex justify-content-center">
@@ -22,6 +24,7 @@ class HomePage extends Component {
             </div>
             <div class="col-sm-4"></div>
           </div>
+          </Segment>
       </div>
     )
   }

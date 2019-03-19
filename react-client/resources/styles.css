@@ -5,6 +5,19 @@ header {
   height: 50px;
   color: white;
 }
+
+.nav-menu {
+ background: black !important;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+  background-color: rgb(206, 206, 206) !important;
+}
+
 #headerButtons {
   list-style-type: none;
   margin: 0;
@@ -22,12 +35,17 @@ footer {
 }
 
 .banner {
-  object-fit: fill;
-  display:block;
-  position:relative;
-  overflow:hidden;/*keeps the image in the container*/
-  height: 300px;
-  width: 100%;
+  /* Use "linear-gradient" to add a darken background effect to the image (banner.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568)), url("banner.jpg") !important;
+
+  /* Set a specific height */
+  height: 50% !important;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative !important;
 }
 
 .navbar{
